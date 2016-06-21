@@ -726,7 +726,7 @@ alias -l _WebSocket.Debug {
 #_WebSocket_Debug end
 alias -l _WebSocket.Debug
 menu @WebSocketDebug {
-  $iif($WebSockDebug, Disable, Enable): WebSocketDebug
+  $iif($WebSockDebug, Disable, Enable): WebSockDebug
   -
   Clear:clear @WebSocketDebug
   -
