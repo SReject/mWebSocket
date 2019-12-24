@@ -776,7 +776,7 @@ on $*:SOCKOPEN:/^_WebSocket_(?!\d+$)[^-?*][^?*]*$/:{
   var %Error, %Name = $gettok($sockname, 2-, 95), %Key, %Index
   _WebSocket.Debug -i2 SockOpen> $+ $sockname $+ ~Connection established
   if ($sockerr) {
-    %Error = SOCKOPEN_ERROR $sock($socknamw).wsmsg
+    %Error = SOCKOPEN_ERROR $sock($sockname).wsmsg
   }
   elseif (!$hget($sockname)) {
     %Error = INTERNAL_ERROR socket-state hashtable doesn't exist
